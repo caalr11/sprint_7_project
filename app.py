@@ -35,7 +35,7 @@ if disp_button:
     # Crear un diagrama de dispersión utilizando plotly.graph_objects
     # Se crea una figura vacía y luego se añade un rastro de dispersión
     fig2 = go.Figure(data=go.Scatter(
-        x=car_data['year'], y=car_data['price'], mode='markers'))
+        x=car_data['model_year'], y=car_data['price'], mode='markers'))
 
     # Opcional: Puedes añadir un título al gráfico si lo deseas
     fig2.update_layout(title_text='Relación entre Año y Precio')
